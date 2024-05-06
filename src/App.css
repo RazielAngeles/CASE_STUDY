@@ -1,38 +1,149 @@
-.App {
+/* App.css */
+
+:root {
+  --primary-color: #FFF2D7;
+  --secondary-color: #FFE0B5;
+  --accent-color: #F8C794;
+  --dark-color: #D8AE7E;
+  --font-color: #333; /* Blackish gray */
+}
+
+/* Global styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Use Roboto font as the primary font */
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color); /* Set background color using primary color */
+  color: var(--font-color); /* Set font color */
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: var(--dark-color); /* Use dark color for the background */
+  color: #fff;
+  padding: 10px;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Content area styles */
+.content {
+  padding: 20px;
+}
+
+/* Main heading styles */
+.heading {
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--dark-color); /* Use dark color for the heading */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Product item styles */
+.product-item {
+  border: 1px solid var(--accent-color); /* Use accent color for border */
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color); /* Use secondary color for background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.product-item h3 {
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product-item p {
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.product-item button {
+  background-color: var(--dark-color); /* Use dark color for button background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-item button:hover {
+  background-color: #555;
+}
+
+/* Cart styles */
+.cart {
+  background-color: var(--secondary-color); /* Use secondary color for background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-heading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  margin-bottom: 10px;
+}
+
+.cart-item p {
+  margin: 5px 0;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Checkout form styles */
+.checkout-form {
+  background-color: var(--secondary-color); /* Use secondary color for background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkout-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.checkout-form button {
+  background-color: var(--dark-color); /* Use dark color for button background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: #555;
 }
